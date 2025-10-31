@@ -1,0 +1,223 @@
+/* === Container Layout === */
+.wishlist-container {
+  min-height: 100vh;
+  background-color: #f9fafb;
+  padding: 24px;
+  padding-top: 80px; /* Add top padding to account for fixed navbar */
+}
+
+.wishlist-content {
+  max-width: 1120px;
+  margin: 0 auto;
+}
+
+/* === Header === */
+.wishlist-header {
+  margin-bottom: 32px;
+  text-align: left;
+}
+
+.wishlist-title {
+  font-size: 2.5rem;
+  color: #5c1a1a;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.wishlist-count {
+  color: #6b7280;
+}
+
+/* === Empty State === */
+.wishlist-empty {
+  background: #fff;
+  border-radius: 12px;
+  padding: 64px 0;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.empty-icon {
+  color: #9ca3af;
+  margin-bottom: 16px;
+}
+
+.empty-text {
+  color: #6b7280;
+  margin-bottom: 8px;
+}
+
+.empty-subtext {
+  color: #9ca3af;
+  font-size: 14px;
+}
+
+/* === Grid Layout === */
+.wishlist-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+}
+
+/* === Card Styles === */
+.wishlist-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: box-shadow 0.3s ease;
+}
+
+.wishlist-card:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* === Image Section === */
+.wishlist-image-container {
+  position: relative;
+}
+
+.wishlist-image {
+  width: 100%;
+  height: 225px;
+  object-fit: cover;
+}
+
+.wishlist-remove-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 8px;
+  background: white;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.wishlist-remove-btn:hover {
+  background: #f3f4f6;
+}
+
+.remove-icon {
+  color: #4b5563;
+}
+
+.wishlist-category-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 12px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+}
+
+.wishlist-category {
+  font-size: 12px;
+  background-color: #d4af37;
+  color: #5c1a1a;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+/* === Card Content === */
+.wishlist-card-content {
+  padding: 16px;
+}
+
+.art-title {
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+.art-description {
+  color: #4b5563;
+  font-size: 14px;
+  margin-bottom: 8px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.art-artisan {
+  color: #6b7280;
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+
+.art-price {
+  font-size: 20px;
+  color: #d4af37;
+}
+
+.wishlist-price-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+/* === Buttons === */
+.wishlist-purchase-btn {
+  width: 100%;
+  background: #5c1a1a;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wishlist-purchase-btn:hover {
+  background: #7d2828;
+}
+
+.purchase-icon {
+  margin-right: 8px;
+}
+
+/* === Total Value Section === */
+.wishlist-total-card {
+  background: white;
+  border: 1px solid #d4af37;
+  border-radius: 12px;
+  margin-top: 32px;
+  padding: 24px;
+}
+
+.wishlist-total-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.total-label {
+  font-size: 18px;
+  color: #5c1a1a;
+}
+
+.total-amount {
+  font-size: 28px;
+  color: #d4af37;
+}
+
+.wishlist-purchase-all-btn {
+  background: #d4af37;
+  color: #5c1a1a;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.wishlist-purchase-all-btn:hover {
+  background: #b8941f;
+}
