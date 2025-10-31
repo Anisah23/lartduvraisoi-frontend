@@ -17,6 +17,7 @@ export const CartProvider = ({ children }) => {
   const [cart, setCart] = useState(null);
   const [loading, setLoading] = useState(false);
   const { isLoggedIn } = useAuth();
+  
 
   useEffect(() => {
     if (isLoggedIn) {
