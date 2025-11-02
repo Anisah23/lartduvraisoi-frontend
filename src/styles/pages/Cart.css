@@ -1,170 +1,199 @@
+/* Main cart page container - full height with light background */
 .cart-page {
-  min-height: 100vh;
-  background-color: #f9f9f9;
-  padding: 2rem;
+  min-height: 100vh; /* Minimum height of viewport */
+  background-color: #f9f9f9; /* Light gray background */
+  padding: 2rem; /* Padding around entire page */
 }
 
+/* Cart header title styling */
 .cart-header h1 {
-  color: #5c1a1a;
-  font-size: 2rem;
+  color: #5c1a1a; /* Dark red brand color */
+  font-size: 2rem; /* Large font size for title */
 }
 
+/* Cart container - centers content with max width */
 .cart-container {
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 1200px; /* Maximum width for large screens */
+  margin: 0 auto; /* Center horizontally */
 }
 
+/* Empty cart state styling */
 .empty-cart {
-  padding: 4rem;
-  text-align: center;
+  padding: 4rem; /* Large padding for empty state */
+  text-align: center; /* Center align text */
 }
 
+/* Empty cart note text styling */
 .empty-note {
-  color: #888;
-  font-size: 0.9rem;
+  color: #888; /* Gray text color */
+  font-size: 0.9rem; /* Slightly smaller font */
 }
 
+/* Two-column grid layout for cart items and summary */
 .cart-grid {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 2rem;
+  display: grid; /* Use CSS Grid */
+  grid-template-columns: 2fr 1fr; /* Left column twice as wide as right */
+  gap: 2rem; /* Space between columns */
 }
 
+/* Individual cart item card styling */
 .cart-item {
-  border: 1px solid #ddd;
-  border-radius: 10px;
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 10px; /* Rounded corners */
 }
 
+/* Cart item image styling */
 .cart-item-img {
-  width: 8rem;
-  height: 8rem;
-  border-radius: 10px;
-  object-fit: cover;
+  width: 8rem; /* Fixed width */
+  height: 8rem; /* Fixed height (square) */
+  border-radius: 10px; /* Rounded corners */
+  object-fit: cover; /* Crop image to fit container */
 }
 
+/* Cart item title styling */
 .cart-item-info h3 {
-  color: #5c1a1a;
-  margin-bottom: 0.3rem;
+  color: #5c1a1a; /* Dark red brand color */
+  margin-bottom: 0.3rem; /* Small bottom margin */
 }
 
+/* Cart item description text styling */
 .cart-item-desc {
-  color: #555;
-  font-size: 0.9rem;
+  color: #555; /* Dark gray text */
+  font-size: 0.9rem; /* Slightly smaller font */
 }
 
+/* Category tag styling */
 .category-tag {
-  background-color: #5c1a1a;
-  color: white;
-  padding: 0.2rem 0.5rem;
-  border-radius: 6px;
-  font-size: 0.75rem;
+  background-color: #5c1a1a; /* Dark red background */
+  color: white; /* White text */
+  padding: 0.2rem 0.5rem; /* Small padding */
+  border-radius: 6px; /* Rounded corners */
+  font-size: 0.75rem; /* Small font size */
 }
 
+/* Quantity control buttons container */
 .quantity-controls {
-  display: flex;
-  align-items: center;
-  border: 1px solid #5c1a1a;
-  border-radius: 6px;
-  overflow: hidden;
+  display: flex; /* Horizontal layout */
+  align-items: center; /* Vertically center items */
+  border: 1px solid #5c1a1a; /* Border with brand color */
+  border-radius: 6px; /* Rounded corners */
+  overflow: hidden; /* Hide button borders */
 }
 
+/* Individual quantity control buttons */
 .quantity-controls button {
-  padding: 0.5rem 0.7rem;
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: #5c1a1a;
+  padding: 0.5rem 0.7rem; /* Button padding */
+  background: none; /* No background */
+  border: none; /* No border */
+  cursor: pointer; /* Pointer cursor on hover */
+  color: #5c1a1a; /* Brand color text */
 }
 
+/* Quantity control button hover effect */
 .quantity-controls button:hover {
-  background-color: #5c1a1a;
-  color: white;
+  background-color: #5c1a1a; /* Brand color background */
+  color: white; /* White text */
 }
 
+/* Price amount styling */
 .price-amount {
-  color: #d4af37;
-  font-size: 1.25rem;
+  color: #d4af37; /* Gold color for prices */
+  font-size: 1.25rem; /* Larger font for emphasis */
 }
 
+/* Order summary card styling */
 .summary-card {
-  border: 2px solid #d4af37;
-  position: sticky;
-  top: 2rem;
+  border: 2px solid #d4af37; /* Gold border */
+  position: sticky; /* Stick to viewport when scrolling */
+  top: 2rem; /* Distance from top when sticky */
 }
 
+/* Summary card header styling */
 .summary-header {
-  background: linear-gradient(to right, #5c1a1a, #7d2828);
-  color: white;
-  padding: 1rem;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  background: linear-gradient(to right, #5c1a1a, #7d2828); /* Red gradient background */
+  color: white; /* White text */
+  padding: 1rem; /* Header padding */
+  border-top-left-radius: 10px; /* Rounded top-left corner */
+  border-top-right-radius: 10px; /* Rounded top-right corner */
 }
 
+/* Summary card content styling */
 .summary-content {
-  padding: 1rem 1.5rem;
+  padding: 1rem 1.5rem; /* Content padding */
 }
 
+/* Summary row styling (subtotal, shipping, tax) */
 .summary-rows .row {
-  display: flex;
-  justify-content: space-between;
-  color: #5c1a1a;
-  margin: 0.3rem 0;
+  display: flex; /* Horizontal layout */
+  justify-content: space-between; /* Space between label and value */
+  color: #5c1a1a; /* Brand color text */
+  margin: 0.3rem 0; /* Vertical margin */
 }
 
+/* Total row styling (emphasized) */
 .total-row {
-  display: flex;
-  justify-content: space-between;
-  font-weight: bold;
-  color: #5c1a1a;
+  display: flex; /* Horizontal layout */
+  justify-content: space-between; /* Space between label and value */
+  font-weight: bold; /* Bold text */
+  color: #5c1a1a; /* Brand color text */
 }
 
+/* Total amount styling */
 .total-amount {
-  color: #d4af37;
-  font-size: 1.4rem;
+  color: #d4af37; /* Gold color for total */
+  font-size: 1.4rem; /* Large font size */
 }
 
+/* Free shipping promotion message styling */
 .free-shipping {
-  background: rgba(240, 211, 104, 0.2);
-  border: 1px solid #d4af37;
-  padding: 0.7rem;
-  border-radius: 6px;
-  margin-top: 1rem;
-  font-size: 0.9rem;
-  color: #5c1a1a;
+  background: rgba(240, 211, 104, 0.2); /* Light gold background */
+  border: 1px solid #d4af37; /* Gold border */
+  padding: 0.7rem; /* Padding */
+  border-radius: 6px; /* Rounded corners */
+  margin-top: 1rem; /* Top margin */
+  font-size: 0.9rem; /* Slightly smaller font */
+  color: #5c1a1a; /* Brand color text */
 }
 
+/* Checkout button styling */
 .checkout-btn {
-  width: 100%;
-  background-color: #d4af37 !important;
-  color: #5c1a1a !important;
+  width: 100%; /* Full width */
+  background-color: #d4af37 !important; /* Gold background (important to override) */
+  color: #5c1a1a !important; /* Brand color text (important to override) */
 }
 
+/* Checkout button hover effect */
 .checkout-btn:hover {
-  background-color: #b8941f !important;
+  background-color: #b8941f !important; /* Darker gold on hover */
 }
 
+/* Place order button styling */
 .place-order-btn {
-  width: 100%;
-  background-color: #5c1a1a !important;
-  color: white !important;
+  width: 100%; /* Full width */
+  background-color: #5c1a1a !important; /* Brand color background */
+  color: white !important; /* White text */
 }
 
+/* Place order button hover effect */
 .place-order-btn:hover {
-  background-color: #7d2828 !important;
+  background-color: #7d2828 !important; /* Lighter red on hover */
 }
 
-/* Responsive */
+/* Responsive design for tablets and mobile */
 @media (max-width: 768px) {
+  /* Reduce page padding on smaller screens */
   .cart-page {
     padding: 1rem;
   }
 
+  /* Stack cart grid vertically on mobile */
   .cart-grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
+    grid-template-columns: 1fr; /* Single column layout */
+    gap: 1rem; /* Smaller gap */
   }
 
+  /* Remove sticky positioning on mobile */
   .summary-card {
-    position: static;
+    position: static; /* Normal positioning */
   }
 }
