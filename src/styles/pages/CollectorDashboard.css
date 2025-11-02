@@ -1,92 +1,108 @@
+/* Main collector dashboard container - full height with light background */
 .collector-dashboard {
-  min-height: 100vh;
-  background-color: #f9fafb;
-  padding: 24px;
-  padding-top: 80px; /* Account for fixed navbar */
+  min-height: 100vh; /* Minimum height of viewport */
+  background-color: #f9fafb; /* Very light gray background */
+  padding: 24px; /* Padding around entire page */
+  padding-top: 80px; /* Extra top padding to account for fixed navbar */
 }
 
+/* Dashboard container - centers content with max width */
 .dashboard-container {
-  max-width: 90rem;
-  margin: 0 auto;
+  max-width: 90rem; /* Very large max width (1440px) */
+  margin: 0 auto; /* Center horizontally */
 }
 
+/* Dashboard header section */
 .dashboard-header {
-  margin-bottom: 2rem;
-  text-align: left;
+  margin-bottom: 2rem; /* Bottom margin */
+  text-align: left; /* Left align text */
 }
 
+/* Dashboard main title styling */
 .dashboard-title {
-  font-size: 2.5rem;
-  color: #5c1a1a;
-  margin-bottom: 0.5rem;
-  font-weight: 700;
+  font-size: 2.5rem; /* Very large font size */
+  color: #5c1a1a; /* Dark red brand color */
+  margin-bottom: 0.5rem; /* Small bottom margin */
+  font-weight: 700; /* Bold font weight */
 }
 
+/* Dashboard subtitle styling */
 .dashboard-subtitle {
-  color: #4b5563;
+  color: #4b5563; /* Medium gray text color */
 }
 
+/* Statistics cards grid container */
 .dashboard-stats {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-  margin-bottom: 2rem;
+  display: grid; /* CSS Grid layout */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive columns with min width */
+  gap: 1.5rem; /* Space between cards */
+  margin-bottom: 2rem; /* Bottom margin */
 }
 
+/* Individual dashboard card styling */
 .dashboard-card {
-  background: white;
-  border: 1px solid #d4af37;
-  border-radius: 12px;
-  transition: box-shadow 0.2s ease-in-out;
-  overflow: hidden;
+  background: white; /* White background */
+  border: 1px solid #d4af37; /* Gold border */
+  border-radius: 12px; /* Rounded corners */
+  transition: box-shadow 0.2s ease-in-out; /* Smooth shadow transition */
+  overflow: hidden; /* Hide overflow for rounded corners */
 }
 
+/* Dashboard card hover effect */
 .dashboard-card:hover {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow on hover */
 }
 
+/* Card header section */
 .card-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.5rem 1.5rem 0.5rem 1.5rem;
+  display: flex; /* Horizontal layout */
+  justify-content: space-between; /* Space between title and icon */
+  align-items: center; /* Vertically center items */
+  padding: 1.5rem 1.5rem 0.5rem 1.5rem; /* Padding with less bottom padding */
 }
 
+/* Card title styling */
 .card-title {
-  font-size: 0.875rem;
-  font-weight: 600;
-  color: #5c1a1a;
+  font-size: 0.875rem; /* Small font size */
+  font-weight: 600; /* Semi-bold font weight */
+  color: #5c1a1a; /* Brand color */
 }
 
+/* Card icon styling */
 .card-icon {
-  color: #d4af37;
+  color: #d4af37; /* Gold color for icons */
 }
 
+/* Card content section */
 .card-content {
-  padding: 0 1.5rem 1.5rem 1.5rem;
+  padding: 0 1.5rem 1.5rem 1.5rem; /* Padding with no top padding */
 }
 
+/* Card value (main statistic number) styling */
 .card-value {
-  font-size: 1.875rem;
-  color: #5c1a1a;
-  font-weight: 700;
+  font-size: 1.875rem; /* Large font size for emphasis */
+  color: #5c1a1a; /* Brand color */
+  font-weight: 700; /* Bold font weight */
 }
 
+/* Card description text styling */
 .card-description {
-  font-size: 0.75rem;
-  color: #4b5563;
-  margin-top: 0.25rem;
+  font-size: 0.75rem; /* Small font size */
+  color: #4b5563; /* Medium gray color */
+  margin-top: 0.25rem; /* Small top margin */
 }
 
+/* Lower dashboard section grid */
 .dashboard-lower {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 1.5rem;
+  display: grid; /* CSS Grid layout */
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Responsive columns with larger min width */
+  gap: 1.5rem; /* Space between cards */
 }
 
+/* Empty state text styling */
 .empty-text {
-  color: #6b7280;
-  text-align: center;
-  padding: 2rem 0;
-  margin: 0;
+  color: #6b7280; /* Light gray color */
+  text-align: center; /* Center align text */
+  padding: 2rem 0; /* Vertical padding */
+  margin: 0; /* No margin */
 }
